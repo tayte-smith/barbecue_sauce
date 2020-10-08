@@ -4,30 +4,36 @@
 <head>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 <meta charset="utf-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <title>Nutrition Facts</title>
 </head>
 <body>
     <header>
       <!-- Nav section -->
-      <nav>
-        <ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Menu</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
           <li>
-            <a href="index.html">Home Page</a>
+            <a href="index.html" <button type="button" class="btn btn-home"> Home</a> </button>
           </li>
 
           <li>
-            <a href="menu.html">Menu</a>
+            <a href="menu.html"<button type="button" class="btn btn-home"> Menu</a> </button>
           </li>
           <li>
-    	    <a href="original_sauce.html">Original sauce</a></li>
+          <a href="original_sauce.html"<button type="button" class="btn btn-home"> Original Sauce</a> </button>
           <li>
-            <a href="bigjoesbigpepper.html">Big Joe's Big Pepper Sauce</a>
+            <a href="bigjoesbigpepper.html"<button type="button" class="btn btn-home"> Big Joe's Big Pepper Sauce</a> </button>
           </li>
           <li>
-            <a href="bigjoesfeelgoodsauce.html">Big Joe's Feel Good Sauce</a>
+            <a href="bigjoesfeelgoodsauce.html"<button type="button" class="btn btn-home"> Big Joe's Feel Good Sauce</a> </button>
           </li>
           <li>
-            <a href="nutrition_facts.html">Nutrition Facts</a>
+            <a href="nutrition_facts.html"<button type="button" class="btn btn-home"> Nutrition Facts</a> </button>
           </li>
         </ul>
       </nav>
@@ -35,31 +41,43 @@
       <h1>My Company Title</h1>
     </header>
 <h1>Nutrition Facts</h1>
+<div class="alert alert-primary" role="alert">
+  Warning: these sauces are addictive.
+</div>
 
 <h2 class="sansserif">Big Joe's Feel Good Sauce</h2>
-<table id= "menu">
+<table class= "table table dark">
+  <thead>
   <tr>
-    <th> Car Oil </th>
-    <th> Sodium </th>
-    <th> Chlorine </th>
+    <th scope="col">Car Oil </th>
+    <th scope= "col"> Sodium </th>
+    <th scope= "col"> Chlorine </th>
   </tr> 
+</thead>
+<tbody>
   <tr>
     <td> 80% </td>
     <td> 5% </td>
     <td> 15% </td>
   </tr>
+</tbody>
 </table>
 
-<h2 class="solid">Big Joe's Big Pepper</h2>
-  <table id="menu">
+<h2 class="sansserif">Big Joe's Big Pepper</h2>
+  <table class="table table dark">
+    <thead>
   <tr>
-    <th> Ghost Pepper </th> 
-    <th> Secret Sauce </th>
-    <th> Mind Control Device </th>
+    <th scope="col"> Ghost Pepper </th> 
+    <th scope="col"> Secret Sauce </th>
+    <th scope="col"> Mind Control Device </th>
   </tr> 
-  <tr> 
+  </thead>
+  <tbody>
+    <tr>
     <td> 79.99% </td>
     <td> 20% </td>
     <td> .01% </td>
+  </tr>
+</tbody>
     </table>
 </html>
